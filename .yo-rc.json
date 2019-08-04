@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "mindly"
+    },
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "monolith",
+    "baseName": "cPortfolio",
+    "packageName": "mindly",
+    "packageFolder": "mindly",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YWQwMTY0MGJiMDAzN2ZiZGUwY2U0N2IzNjg2NjAxOTI5YzU5MTcxODE3YWIyN2YyODcwYzUxYWIxMmFkY2M0MTgzYmYxMmZkZTZjZWExZjM0ZGM1ZTUyOGY2NWMzMzFmYWRkMTA4OTI1YTBjZmQ5OGZhYjZjNDk4ZmM1NTgzNmM=",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "flatly",
+    "clientThemeVariant": "light",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}
