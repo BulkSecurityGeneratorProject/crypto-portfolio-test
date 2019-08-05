@@ -43,6 +43,7 @@ public class CacheConfiguration {
             createCache(cm, mindly.domain.User.class.getName());
             createCache(cm, mindly.domain.Authority.class.getName());
             createCache(cm, mindly.domain.User.class.getName() + ".authorities");
+            createCache(cm, mindly.domain.Entry.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

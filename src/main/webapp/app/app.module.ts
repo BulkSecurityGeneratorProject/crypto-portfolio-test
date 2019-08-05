@@ -3,9 +3,10 @@ import './vendor.ts';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { NgbDatepickerConfig } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDateNativeUTCAdapter, NgbDatepickerConfig } from '@ng-bootstrap/ng-bootstrap';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { NgJhipsterModule } from 'ng-jhipster';
+import { NgbDateAdapter, NgbDateStruct, NgbDateNativeAdapter } from '@ng-bootstrap/ng-bootstrap';
 
 import { AuthInterceptor } from './blocks/interceptor/auth.interceptor';
 import { AuthExpiredInterceptor } from './blocks/interceptor/auth-expired.interceptor';
@@ -59,6 +60,10 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
       provide: HTTP_INTERCEPTORS,
       useClass: NotificationInterceptor,
       multi: true
+    },
+    {
+      provide: NgbDateAdapter,
+      useClass: NgbDateNativeAdapter
     }
   ],
   bootstrap: [JhiMainComponent]
